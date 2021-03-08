@@ -59,19 +59,18 @@ class ToggleSwitch extends React.Component {
   }
 
   onDragEnd = (e) => {
-    const { contentOffset } = e.nativeEvent;
+        const { contentOffset } = e.nativeEvent;
     if(contentOffset.x > (this.props.width ) / 2) {
       this.scrollRef.scrollToEnd();
       this.updateState(false);
     } else {
-      this.scrollRef.scrollTo({x: 0, y: 0, animated: true})
+      this.scrollRef.scrollTo({x: 0, y: 0, animated: true});
       this.updateState(true);
     }
-    this.touchableOpacity.setOpacityTo(1, 300);
   }
 
   onDragStart = (e) => {
-    this.touchableOpacity.setOpacityTo(0.5, 300);
+  
   }
 
   render() {
