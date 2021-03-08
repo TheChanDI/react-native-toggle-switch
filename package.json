@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/prsn/react-native-toggle-switch#readme",
   "dependencies": {
-"rnswitchtoggle": "ThChanDI/react-native-toggle-switch#TheChanDI-patch-1",
+"rnswitchtoggle": "github:ThChanDI/react-native-toggle-switch#TheChanDI-patch-1",
 }
   "devDependencies": {
     "react": "16.6.3",
